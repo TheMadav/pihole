@@ -14,7 +14,7 @@ The repository contains no application code. It only hosts a regularly updated t
 
 Domains are extracted automatically from the official BaFin RSS feed for consumer warnings:
 
-[BaFin RSS-Feed](https://www.bafin.de/DE/Service/TopNavigation/RSS/_function/rssnewsfeed.xml)
+**[BaFin RSS-Feed](https://www.bafin.de/DE/Service/TopNavigation/RSS/_function/rssnewsfeed.xml)**
 
 Only domains explicitly mentioned in BaFin warning publications are included.
 
@@ -36,7 +36,7 @@ Format:
 
 ⸻
 
-## Usage ([(Pi-hole)](https://pi-hole.net)):
+## Usage [(Pi-hole)](https://pi-hole.net):
 
 1.	Add the raw .txt file URL as a new adlist in Pi-hole.
 2.	Update gravity.
