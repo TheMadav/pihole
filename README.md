@@ -21,24 +21,26 @@ Only domains explicitly mentioned in BaFin warning publications are included.
 ⸻
 
 ## How It Works
-	•	An automated workflow periodically retrieves the BaFin RSS feed.
-	•	Newly published warning articles are parsed.
-	•	Domains mentioned in the articles are extracted and normalized.
-	•	The resulting deduplicated domain list is written to a plain text file in this repository.
-	•	The list is updated automatically.
+
+- An automated workflow periodically retrieves the BaFin RSS feed.
+- Newly published warning articles are parsed.
+- Domains mentioned in the articles are extracted and normalized.
+- The resulting deduplicated domain list is written to a plain text file in this repository.
+- The list is updated automatically.
 
 Format:
-	•	One domain per line
-	•	No subpath filtering (DNS-level blocking only)
-	•	Intended for direct consumption by DNS filtering systems such as Pi-hole
+
+- One domain per line
+- No subpath filtering (DNS-level blocking only)
+- Intended for direct consumption by DNS filtering systems such as Pi-hole
 
 ⸻
 
 ## Usage ([(Pi-hole)](https://pi-hole.net)):
 
-	1.	Add the raw .txt file URL as a new adlist in Pi-hole.
-	2.	Update gravity.
-	3.	Pi-hole will periodically refresh the list according to its configured update schedule.
+1.	Add the raw .txt file URL as a new adlist in Pi-hole.
+2.	Update gravity.
+3.	Pi-hole will periodically refresh the list according to its configured update schedule.
 
 Note:
 DNS-level blocking operates at the domain level. If BaFin warns only about specific subpages of an otherwise legitimate domain, blocking may affect the entire domain.
@@ -48,10 +50,11 @@ DNS-level blocking operates at the domain level. If BaFin warns only about speci
 ## Disclaimer
 
 This blocklist is automatically generated from publicly available BaFin RSS data.
-	•	No guarantee is given regarding completeness, correctness, or timeliness.
-	•	Parsing errors or feed changes may lead to missing or incorrectly extracted domains.
-	•	This repository is not affiliated with or endorsed by BaFin.
-	•	Use at your own risk.
+
+- No guarantee is given regarding completeness, correctness, or timeliness.
+- Parsing errors or feed changes may lead to missing or incorrectly extracted domains.
+- This repository is not affiliated with or endorsed by BaFin.
+- Use at your own risk.
 
 For authoritative and legally binding information, refer directly to official BaFin publications.
 
