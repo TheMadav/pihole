@@ -8,8 +8,6 @@ The primary purpose of this list is to allow DNS-based blocking (e.g., via Pi-ho
 
 The repository contains no application code. It only hosts a regularly updated text file with domains.
 
-⸻
-
 ## Source
 
 Domains are extracted automatically from the official BaFin RSS feed for consumer warnings:
@@ -17,8 +15,6 @@ Domains are extracted automatically from the official BaFin RSS feed for consume
 **[BaFin RSS-Feed](https://www.bafin.de/DE/Service/TopNavigation/RSS/_function/rssnewsfeed.xml)**
 
 Only domains explicitly mentioned in BaFin warning publications are included.
-
-⸻
 
 ## How It Works
 
@@ -34,8 +30,6 @@ Format:
 - No subpath filtering (DNS-level blocking only)
 - Intended for direct consumption by DNS filtering systems such as Pi-hole
 
-⸻
-
 ## Usage [(Pi-hole)](https://pi-hole.net):
 
 1.	Add the raw .txt file URL as a new adlist in Pi-hole.
@@ -44,8 +38,6 @@ Format:
 
 Note:
 DNS-level blocking operates at the domain level. If BaFin warns only about specific subpages of an otherwise legitimate domain, blocking may affect the entire domain.
-
-⸻
 
 ## Disclaimer
 
@@ -57,8 +49,6 @@ This blocklist is automatically generated from publicly available BaFin RSS data
 - Use at your own risk.
 
 For authoritative and legally binding information, refer directly to official BaFin publications.
-
-⸻
 
 ## License
 
